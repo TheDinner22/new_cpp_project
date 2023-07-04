@@ -16,6 +16,13 @@ cd ./$1
 rm -rf ./.git
 git init
 
+# get rid of build script which is in the project
+# because it is also in the github repo
+rm -rf ./new_cpp_project.sh
+
+# get rid of readme
+rm -rf ./README.md
+
 # build the helloworld app
 make
 
